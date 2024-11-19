@@ -263,3 +263,86 @@ body {
     padding: 10px;
   }
 }
+/* Mobile Screens (Small Smartphones) */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 15px;  /* Add some space below the logo */
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .container {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center the content horizontally */
+  }
+
+  /* Centering the content section */
+  .content {
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 20px;  /* Add space below content */
+  }
+
+  .content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  /* Centering the main-finder */
+  .main-finder {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;  /* Stack the search inputs vertically */
+    align-items: center;  /* Center the search elements */
+    width: 100%;  /* Take full width for small screens */
+    margin-bottom: 20px;  /* Add some space at the bottom */
+  }
+
+  /* Search Bar Inputs */
+  .search-bar {
+    display: flex;
+    flex-direction: column;  /* Stack the inputs vertically */
+    gap: 15px;  /* Add gap between input fields */
+    width: 100%;
+  }
+
+  .search-bar input {
+    flex: 1;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Image Section */
+  .image-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .image-container img {
+    max-width: 90%;  /* Make the image smaller for small screens */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+}
