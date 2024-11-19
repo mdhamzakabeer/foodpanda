@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Header</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="check.css">
 </head>
 <body>
-   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor repellat mollitia voluptas cumque. Alias hic animi officiis accusamus aspernatur qui nostrum labore error dolor adipisci aliquam delectus exercitationem, quo rem!</p>
+    <header class="header">
+        <div class="logo">
+            <a href="#" class="logo-main">
+                <!-- Add your logo here -->
+                <img src="logo.png" alt="Foodpanda Logo" class="logo-img">
+            </a>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><button class="btn btn-outline">Log in</button></li>
+                <li><button class="btn btn-primary">Sign up</button></li>
+                <li>
+                    <div class="language-dropdown">
+                        <i class="fa-solid fa-globe"></i>
+                        <select class="lang">
+                            <option value="en">English</option>
+                            <option value="ur">Urdu</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <button class="card-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <table class="responsive-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Burger</td>
+                    <td>$5</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Pizza</td>
+                    <td>$12</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
 </body>
 </html>

@@ -1,4 +1,4 @@
-/* styles.css */
+/* Base Styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -14,13 +14,15 @@ body {
   background-color: #fff;
   border-bottom: 1px solid #ddd;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-left: 300px;
+  gap: 15px; /* Increased gap for better spacing between logo and nav items */
 }
 
 .nav {
@@ -32,8 +34,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 15px;
-  margin-right: 300px;
+  gap: 20px; /* Increased gap between nav items */
   align-items: center;
 }
 
@@ -51,6 +52,7 @@ body {
   color: #333;
   border: 1px solid #000000;
 }
+
 .btn-outline:hover {
   background-color: #f0efef;
   transform: scale(1.1);
@@ -61,21 +63,10 @@ body {
   color: #fff;
   border: none;
 }
+
 .btn-primary:hover {
   background-color: #e6005c;
   transform: scale(1.08);
-}
-.btn1 {
-  padding: 10px 20px;
-  border: none;
-  font-size: 1em;
-  cursor: pointer;
-  border-radius: 9px;
-  transition: background-color 0.3s, transform 0.2s;
-}
-.lang{
-  width: 20px;
-  color: #e6005c;
 }
 
 .card-icon {
@@ -83,6 +74,7 @@ body {
   background-color: #fff;
   margin-top: 4px;
 }
+
 .card-icon:hover {
   background-color: #f0efef;
   border-radius: 20px;
@@ -133,7 +125,6 @@ body {
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 220px;
 }
 
 .search-bar .locate-btn,
@@ -182,18 +173,21 @@ body {
   object-fit: cover;
 }
 
-/* Responsive Design for Tablets and Smaller Screens */
+/* Media Queries */
+
+/* Tablets and Smaller Screens */
 @media (max-width: 1024px) {
   .header {
     padding: 10px 15px;
   }
 
   .logo {
-    margin-left: 100px;
+    margin-left: 20px;
   }
 
   .nav-list {
-    margin-right: 100px;
+    margin-right: 20px;
+    gap: 20px; /* Increased gap for better spacing between logo and nav */
   }
 
   .container {
@@ -210,73 +204,62 @@ body {
   }
 }
 
-/* Responsive Design for Mobile Screens */
+/* Mobile Screens (Small Smartphones) */
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 10px;
-  }
-
-  .logo {
-    margin-left: 0;
-    margin-bottom: 10px;
+    text-align: center;
   }
 
   .nav-list {
     flex-wrap: wrap;
-    gap: 10px;
-    margin: 0;
+    gap: 15px;
+    justify-content: center;
     padding: 0;
+    margin-top: 10px; /* Added margin-top to space out logo and nav */
   }
 
   .container {
-    flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
+    padding: 20px;
     text-align: center;
-    height: 100vh; /* Full screen height for proper centering */
-  }
-
-  .content {
-    max-width: 100%;
   }
 
   .content h1 {
     font-size: 2rem;
   }
 
-  .main-finder {
-    width: 100%; /* Ensure it takes full width on small screens */
-    max-width: 400px; /* Set a reasonable max width */
-    margin: 0 auto; /* Center the main-finder */
-  }
-
   .search-bar {
     flex-direction: column;
     gap: 10px;
-    align-items: center; /* Center the search bar elements horizontally */
-    justify-content: center; /* Center the search bar elements vertically */
   }
 
-  .search-bar input {
-    width: 100%; /* Take full width inside the main-finder */
-    max-width: 300px; /* Set a max width for input fields */
-    padding: 10px; /* Adjust padding for mobile screens */
-  }
-
-  .search-bar .locate-btn,
-  .search-bar .find-btn {
-    width: 100%; /* Full width buttons */
-    max-width: 300px; /* Match the input field's max width */
-    padding: 10px; /* Adjust padding for mobile screens */
-  }
-
-  .image-container {
-    display: none; /* Hide the image section on small screens */
+  .image-container img {
+    max-width: 100%;
+    border-radius: 5px;
   }
 }
 
+/* Extra-Small Screens (Ultra-Small Smartphones) */
+@media (max-width: 480px) {
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
 
+  .content h1 {
+    font-size: 1.8rem;
+  }
 
+  .search-bar input {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
 
+  .search-bar .find-btn,
+  .search-bar .locate-btn {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
