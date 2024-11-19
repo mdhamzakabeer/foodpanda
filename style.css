@@ -39,7 +39,27 @@ body {
   gap: 20px;
   align-items: center;
 }
+/* Base Styles */
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .btn {
   padding: 10px 20px;
   border: none;
@@ -302,5 +322,29 @@ body {
     height: auto;
     border-radius: 8px;
     object-fit: cover;
+  }
+}
+/* Mobile Screens (Small Smartphones) */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column; /* Stack navigation items vertically */
+  }
+
+  .nav-list {
+    flex-direction: row; /* Ensure items are in a row on small screens */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Align items in the center vertically */
+    gap: 15px; /* Add space between items */
+  }
+}
+
+/* Extra Small Screens (Ultra-Small Smartphones) */
+@media (max-width: 480px) {
+  .nav-list {
+    gap: 12px; /* Reduce gap for extra small screens */
+  }
+
+  .nav-list li {
+    font-size: 0.9rem; /* Slightly smaller text for ultra-small screens */
   }
 }
