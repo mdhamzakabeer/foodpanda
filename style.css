@@ -1,4 +1,4 @@
-/* Global Styles */
+/* styles.css */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,7 +6,6 @@ body {
   background-color: #f5f5f5;
 }
 
-/* Header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -21,7 +20,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-left: 20px; /* Adjusted for small screens */
+  margin-left: 300px;
 }
 
 .nav {
@@ -34,61 +33,44 @@ body {
   margin: 0;
   padding: 0;
   gap: 15px;
-  margin-right: 20px; /* Adjusted for responsiveness */
+  margin-right: 300px;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .btn {
-  padding: 12px 20px;
+  padding: 10px 20px;
   border: none;
   font-size: 1em;
   cursor: pointer;
   border-radius: 9px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-.btn:hover {
-  transform: scale(1.05);
-}
-
-/* Buttons */
 .btn-outline {
-  padding: 9px;
-  border: 1px solid #000000;
   background-color: #fff;
   color: #333;
+  border: 1px solid #000000;
 }
-
 .btn-outline:hover {
   background-color: #f0efef;
+  transform: scale(1.1);
 }
 
 .btn-primary {
   background-color: #f82683;
   color: #fff;
+  border: none;
 }
-
 .btn-primary:hover {
   background-color: #e6005c;
+  transform: scale(1.08);
 }
 
-.btn-language {
-  background-color: #fff;
-  color: #333;
-}
-
-.btn-language:hover {
-  background-color: #f0efef;
-}
-
-/* Card Icon */
 .card-icon {
   border: none;
   background-color: #fff;
   margin-top: 4px;
 }
-
 .card-icon:hover {
   background-color: #f0efef;
   border-radius: 20px;
@@ -102,40 +84,34 @@ body {
   padding: 50px;
   max-width: 1200px;
   margin: 0 auto;
-  flex-wrap: wrap;
+  gap: 30px;
 }
 
-/* Content Section */
+/* Left Content Section */
 .content {
   flex: 1;
-  max-width: 600px;
+  max-width: 50%;
 }
 
 .content h1 {
   font-size: 2.5rem;
   font-weight: bold;
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
-/* Main Finder */
 .main-finder {
   background-color: #fff;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  max-width: 100%; /* Ensure it takes full width */
-  width: 100%; /* Make sure it's responsive */
-  margin-bottom: 20px; /* Space between sections */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Search Bar */
 .search-bar {
   display: flex;
-  gap: 20px;
   flex-wrap: wrap;
-  justify-content: center; /* Center the search bar */
-  width: 100%;
+  gap: 20px;
 }
 
 .search-bar input {
@@ -145,8 +121,7 @@ body {
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 350px;  /* Increased width for the input field */
-  max-width: 100%; /* Ensure responsiveness */
+  width: 220px;
 }
 
 .search-bar .locate-btn,
@@ -162,42 +137,30 @@ body {
   background-color: #fff;
   color: #333;
   border: 1px solid #ddd;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.search-bar .locate-btn:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.08);
 }
 
 .search-bar .find-btn {
   background-color: #f82683;
   color: white;
+  border: 1px solid #f82683;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-/* Responsive Design for Tablets and Smaller Screens */
-@media (max-width: 768px) {
-  .main-finder {
-    padding: 15px; /* Adjust padding for smaller screens */
-  }
-
-  .search-bar {
-    flex-direction: column; /* Stack the elements vertically */
-    gap: 10px;
-    justify-content: center;
-  }
-
-  .search-bar input {
-    width: 80%; /* Increase width on smaller screens */
-    padding: 12px;
-  }
-
-  .search-bar .locate-btn,
-  .search-bar .find-btn {
-    width: 80%; /* Match button width to the input field */
-    padding: 12px 15px;
-  }
+.search-bar .find-btn:hover {
+  background-color: #e6005c;
+  transform: scale(1.08);
 }
-
 
 /* Right Image Section */
 .image-container {
   flex: 1;
-  text-align: center;
+  text-align: right;
 }
 
 .image-container img {
@@ -208,31 +171,60 @@ body {
 }
 
 /* Responsive Design for Tablets and Smaller Screens */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .header {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
+    padding: 10px 15px;
   }
 
   .logo {
-    margin: 0 auto 10px;
+    margin-left: 100px;
   }
 
   .nav-list {
-    justify-content: center;
-    gap: 10px;
+    margin-right: 100px;
   }
 
   .container {
     flex-direction: column;
-    padding: 20px;
+    gap: 20px;
   }
 
   .content {
     max-width: 100%;
+  }
+
+  .image-container {
     text-align: center;
-    margin-bottom: 20px;
+  }
+}
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .logo {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 2rem;
   }
 
   .search-bar {
@@ -240,19 +232,30 @@ body {
     gap: 10px;
   }
 
-  .search-bar input {
-    width: 100%;
+  .image-container img {
+    max-width: 100%;
+    border-radius: 5px;
   }
 }
 
-/* Responsive Design for Mobile */
+/* Ultra-small Screens */
 @media (max-width: 480px) {
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
   .content h1 {
     font-size: 1.8rem;
   }
 
-  .btn {
-    padding: 10px 15px;
-    font-size: 0.9em;
+  .search-bar input {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .search-bar .find-btn, .search-bar .locate-btn {
+    font-size: 0.9rem;
+    padding: 10px;
   }
 }
