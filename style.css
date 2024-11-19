@@ -286,4 +286,28 @@ body {
     padding: 8px; /* Compact buttons */
   }
 }
-Key Ch
+/* Mobile Header Center Alignment */
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: center; /* Center the logo horizontally */
+    align-items: center; /* Center the logo vertically */
+    flex-direction: column; /* Stack elements if there are more */
+    padding: 10px; /* Add some padding around the header */
+    background-color: #fff; /* Clean background */
+    height: 80px; /* Set a fixed height for the header */
+  }
+
+  .logo {
+    display: flex;
+    align-items: center; /* Center items vertically within the logo */
+    justify-content: center; /* Ensure horizontal alignment */
+    margin: 0; /* Remove default margins */
+  }
+
+  .logo img {
+    max-width: 100px; /* Adjust the logo size for mobile */
+    height: auto; /* Keep aspect ratio */
+  }
+}
+
