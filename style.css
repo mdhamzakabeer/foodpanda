@@ -63,6 +63,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 .nav-list {
@@ -273,10 +274,6 @@ body {
     padding: 10px;
     text-align: center;
   }
- .nav{
-  display: inline-block;
-  align-items: center;
- }
   .nav-list {
     flex-wrap: wrap;
     justify-content: center;
@@ -288,7 +285,7 @@ body {
     padding: 20px;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;  /* Center the content horizontally */
   }
 
@@ -352,10 +349,7 @@ body {
   .nav-list {
     gap: 12px; /* Reduce gap for extra small screens */
   }
-  .nav{
-    display: inline-block;
-    align-items: center;
-   }
+
   .nav-list li {
     font-size: 0.9rem; /* Slightly smaller text for ultra-small screens */
   }
