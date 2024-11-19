@@ -22,11 +22,13 @@ body {
 .logo {
   display: flex;
   align-items: center;
-  gap: 15px; /* Increased gap for better spacing between logo and nav items */
+  gap: 15px;
+  margin-left: 15%;
 }
 
 .nav {
   display: flex;
+  margin-right: 15%;
 }
 
 .nav-list {
@@ -34,7 +36,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 20px; /* Increased gap between nav items */
+  gap: 20px;
   align-items: center;
 }
 
@@ -68,6 +70,21 @@ body {
   background-color: #e6005c;
   transform: scale(1.08);
 }
+.btn1{
+  padding: 10px 20px;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 9px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.btn-language :hover{
+  transform: scale(1.1);
+}
+.lang{
+  width: 20px;
+}
+
 
 .card-icon {
   border: none;
@@ -173,6 +190,10 @@ body {
   object-fit: cover;
 }
 
+.main-image {
+  margin-left: 15%;
+}
+
 /* Media Queries */
 
 /* Tablets and Smaller Screens */
@@ -219,68 +240,6 @@ body {
     justify-content: center;
     padding: 0;
     margin-top: 10px; /* Added margin-top to space out logo and nav */
-  }
-
-  .container {
-    padding: 20px;
-    text-align: center;
-  }
-
-  .content h1 {
-    font-size: 2rem;
-  }
-
-  .search-bar {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .image-container img {
-    max-width: 100%;
-    border-radius: 5px;
-  }
-}
-
-/* Extra-Small Screens (Ultra-Small Smartphones) */
-@media (max-width: 480px) {
-  .btn {
-    font-size: 0.9rem;
-    padding: 8px 12px;
-  }
-
-  .content h1 {
-    font-size: 1.8rem;
-  }
-
-  .search-bar input {
-    font-size: 0.9rem;
-    padding: 10px;
-  }
-
-  .search-bar .find-btn,
-  .search-bar .locate-btn {
-    font-size: 0.9rem;
-    padding: 10px;
-  }
-}
-/* Mobile Screens (Small Smartphones) */
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    text-align: center;
-  }
-
-  .logo {
-    margin-bottom: 15px;  /* Add some space below the logo */
-  }
-
-  .nav-list {
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    padding: 0;
   }
 
   .container {
