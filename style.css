@@ -1,0 +1,246 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+ box-shadow:  0px 4px 10px rgba(0, 0, 0, 0.1);  /* Bottom shadow */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 300px;
+  
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+  margin-right: 300px;
+  align-items: center;
+}
+
+.btn {
+  padding: 25px;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 9px;
+}
+
+.btn1 {
+  padding: 8px 15px;
+  border: none;
+  font-size: 0.8em;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+
+.btn-outline {
+  padding: 9px;
+  border: 1px solid #000000;
+  background-color: #fff;
+  transition: transform 0.3s ease, background-color 0.2s ease;
+  color: #333;
+}
+.btn-outline:hover{
+  background-color: #f0efef;
+  transform: scale(1.1);
+}
+
+.btn-primary {
+  padding: 9px;
+  background-color: #f82683;
+  transition: transform 0.3s ease, background-color 0.2s ease;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #f82683;
+  transform: scale(1.08);
+}
+
+.btn-language{
+  background-color: #fff;
+  transition: transform 0.3s ease, background-color 0.2s ease;
+  color: #333;
+  text-decoration: none;
+}
+.btn-language:hover{
+     background-color: #f0efef;
+     transform: scale(1.08);
+}
+.lang{
+ border: 0px;
+ width: 20px;
+ text-decoration: none;
+ color: #f82683;
+}
+
+.card-icon {
+  border:none;
+  background-color: #fff;
+  margin-top: 4px;
+}
+.card-icon :hover{
+  background-color: #f0efef;
+  border-radius: 20px;
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+}
+
+/* Main Content Section */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left Content Section */
+.content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+}
+.main-finder{
+  background-color: #ffff;
+  padding: 15px;
+  border-radius: 10px;
+}
+/* Search Bar */
+.search-bar {
+  display: flex;
+  gap: 20px;
+}
+
+
+.search-bar input {
+  flex: 1;
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  
+}
+
+.search-bar .locate-btn,
+.search-bar .find-btn {
+  padding: 15px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  
+}
+
+.search-bar .locate-btn {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.2s ease;
+}
+
+.search-bar .locate-btn:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.08);
+}
+
+.search-bar .find-btn {
+  background-color: #f82683;
+  color: white;
+  border: 1px solid #f82683;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.search-bar .find-btn:hover {
+  background-color: #e6005c;
+  transform: scale(1.08);
+}
+
+/* Right Image Section */
+.image-container {
+  flex: 1;
+  text-align: right;
+}
+
+.image-container img {
+  max-width: 150%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .nav-list {
+      flex-wrap: wrap;
+      gap: 10px;
+  }
+
+  .btn {
+      font-size: 0.8em;
+      padding: 5px 10px;
+  }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .image-container {
+    text-align: center;
+  }
+
+  .image-container img {
+    max-width: 100%;
+  }
+}

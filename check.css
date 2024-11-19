@@ -1,0 +1,113 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+  }
+  
+  /* Container Styling */
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Full width of the screen */
+    padding: 20px;
+    background-color: white;
+    border-radius: 0; /* Remove border radius */
+    
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .image-container {
+      margin-top: 20px;
+    }
+  }
+  
+  /* Content Section */
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .content h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-bar button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-bar .locate-btn {
+    background-color: #f8f9fa;
+    color: #333;
+    border: 1px solid #ddd;
+  }
+  
+  .search-bar .locate-btn:hover {
+    background-color: #e2e6ea;
+  }
+  
+  .search-bar .find-btn {
+    background-color: #ff0066;
+    color: white;
+  }
+  
+  .search-bar .find-btn:hover {
+    background-color: #e6005c;
+  }
+  
+  /* Image Section */
+  .image-container {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+  }
+  
