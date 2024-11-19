@@ -1,4 +1,4 @@
-/* styles.css */
+/* Base Styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -20,7 +20,6 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-left: 300px;
 }
 
 .nav {
@@ -33,7 +32,6 @@ body {
   margin: 0;
   padding: 0;
   gap: 15px;
-  margin-right: 300px;
   align-items: center;
 }
 
@@ -51,6 +49,7 @@ body {
   color: #333;
   border: 1px solid #000000;
 }
+
 .btn-outline:hover {
   background-color: #f0efef;
   transform: scale(1.1);
@@ -61,6 +60,7 @@ body {
   color: #fff;
   border: none;
 }
+
 .btn-primary:hover {
   background-color: #e6005c;
   transform: scale(1.08);
@@ -71,6 +71,7 @@ body {
   background-color: #fff;
   margin-top: 4px;
 }
+
 .card-icon:hover {
   background-color: #f0efef;
   border-radius: 20px;
@@ -121,7 +122,6 @@ body {
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 220px;
 }
 
 .search-bar .locate-btn,
@@ -170,7 +170,20 @@ body {
   object-fit: cover;
 }
 
-/* Responsive Design for Tablets and Smaller Screens */
+/* Media Queries */
+
+/* Large Screens (Desktops > 1200px) */
+@media (min-width: 1200px) {
+  .logo {
+    margin-left: 300px;
+  }
+
+  .nav-list {
+    margin-right: 300px;
+  }
+}
+
+/* Tablets and Smaller Screens */
 @media (max-width: 1024px) {
   .header {
     padding: 10px 15px;
@@ -198,7 +211,7 @@ body {
   }
 }
 
-/* Responsive Design for Mobile Screens */
+/* Mobile Screens (Small Smartphones) */
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -238,7 +251,7 @@ body {
   }
 }
 
-/* Ultra-small Screens */
+/* Extra-Small Screens (Ultra-Small Smartphones) */
 @media (max-width: 480px) {
   .btn {
     font-size: 0.9rem;
@@ -257,5 +270,27 @@ body {
   .search-bar .find-btn, .search-bar .locate-btn {
     font-size: 0.9rem;
     padding: 10px;
+  }
+}
+
+/* Ultra-Wide Screens (> 1600px) */
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1400px;
+    gap: 50px;
+  }
+
+  .content h1 {
+    font-size: 3rem;
+  }
+
+  .search-bar input {
+    font-size: 1.2rem;
+    padding: 20px;
+  }
+
+  .btn {
+    padding: 12px 25px;
+    font-size: 1.2rem;
   }
 }
