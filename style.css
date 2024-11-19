@@ -277,26 +277,6 @@ body {
   }
 }
 
-/* Ultra-small Screens */
-@media (max-width: 480px) {
-  .btn {
-    font-size: 0.9rem;
-    padding: 8px 10px; /* Compact buttons */
-  }
 
-  .content h1 {
-    font-size: 1.8rem;
-  }
-
-  .search-bar input {
-    font-size: 0.9rem;
-    padding: 8px; /* Compact inputs */
-  }
-
-  .search-bar .find-btn, .search-bar .locate-btn {
-    font-size: 0.9rem;
-    padding: 8px; /* Compact buttons */
-  }
-}
 
 
