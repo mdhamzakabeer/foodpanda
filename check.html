@@ -9,55 +9,35 @@
 </head>
 <body>
     <header class="header">
-        <div class="logo">
-            <a href="#" class="logo-main">
-                <!-- Add your logo here -->
-                <img src="logo.png" alt="Foodpanda Logo" class="logo-img">
-            </a>
-        </div>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li><button class="btn btn-outline">Log in</button></li>
-                <li><button class="btn btn-primary">Sign up</button></li>
-                <li>
-                    <div class="language-dropdown">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">
+                    <img src="" alt="Logo" class="logo-image">
+                </a>
+            </div>
+            <!-- Navigation -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><button class="btn btn-outline">Log in</button></li>
+                    <li><button class="btn btn-primary">Sign up</button></li>
+                    <li class="language-select">
                         <i class="fa-solid fa-globe"></i>
-                        <select class="lang">
-                            <option value="en">English</option>
-                            <option value="ur">Urdu</option>
+                        <select>
+                            <option value="en">EN</option>
+                            <option value="ur">UR</option>
                         </select>
-                    </div>
-                </li>
-                <li>
-                    <button class="card-icon">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </button>
-                </li>
-            </ul>
-        </nav>
+                    </li>
+                    <li>
+                        <button class="cart-icon">
+                            <a href="#">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <table class="responsive-table">
-            <thead>
-                <tr>
-                    <th>Item</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Burger</td>
-                    <td>$5</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>Pizza</td>
-                    <td>$12</td>
-                    <td>1</td>
-                </tr>
-            </tbody>
-        </table>
-    </main>
 </body>
 </html>
