@@ -19,79 +19,50 @@ body {
   position: relative;
 }
 
-
-.fp-header {
+nav {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  padding: 8px;
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  padding: 0 1.4rem;
 }
 
-.fp-logo-container {
+nav.active {
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
+}
+
+nav > .logo {
+  padding: 1rem 0;
+ color: #f82683;
+  font-size: 1.6rem;
+  font-weight: 600;
+  align-items: center;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 8px 0;
 }
 
-.fp-logo-text {
-  font-size: 20px;
-  font-weight: bold;
-  color: #f82683;
-  margin-left: 8px;
+nav > .logo > svg {
+  margin-right: 0.3rem;
+  display: none;
 }
-
-.fp-right-section {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-}
-
-.fp-login-btn, .fp-signup-btn {
-  padding: 6px 12px;
-  border-radius: 6px;
-  border: 1px solid transparent;
-  margin: 4px;
+nav > * {
   cursor: pointer;
-  font-size: 14px;
 }
 
-.fp-login-btn {
-  border: 1px solid #d1d5db;
-  color: #4b5563;
-  background-color: transparent;
-}
-
-.fp-login-btn:hover {
-  background-color: #f3f4f6;
-}
-
-.fp-signup-btn {
-  background-color: #dc156e;
-  color: white;
-}
-
-.fp-signup-btn:hover {
-  background-color: #db2777;
-}
-
-.fp-language-select select {
-  padding: 4px;
+nav .login-btn {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   border: none;
-  outline: none;
-  color: #ec4899;
-  margin: 4px;
+  background: transparent;
+  border-inline: 1px solid rgba(128, 128, 128, 0.208);
+  padding: 1.2rem;
+  margin-right: 1rem;
+  cursor: pointer;
 }
 
-.fp-cart-icon {
-  color: #4b5563;
-  margin: 4px;
+.login-btn span {
+  margin-left: 0.5rem;
+  font-weight: 600;
 }
 
 /* Hero Section */
@@ -126,7 +97,7 @@ section.hero {
 
 .hero .actions {
   margin-top: 4em;
-  border-radius: 15px;
+  border-radius: 18px;
 }
 
 .actions .input-container {
@@ -156,20 +127,25 @@ section.hero {
 
 .actions button {
   margin: 0;
-  padding: 0;
-  background-color: #dc156e;
-  margin-top: 1rem;
-  width: 100%;
+  width: 15%;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
   color: white;
+  background-color:#dc156e;
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  white-space: nowrap;
   border: none;
-  height: 64px;
-  border-radius: 8px;
-  font-size: 0.9rem;
-  font-size: 300;
+  margin-left: 1rem;
   cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s ease,;
 }
+
 .actions button:hover {
-  background-color: #a10e50; 
+  background-color: #bd125e; 
   transform: scale(1.03); 
 }
 /* Partners Section */
@@ -206,7 +182,6 @@ section.hero {
 
 .partners .content {
   background: #fff;
-  border-radius: 18px;
   padding: 1rem;
   margin: -4rem 1rem 0;
   box-shadow: 0 2px 28px 0 rgb(0 0 0 /12%);
@@ -235,6 +210,19 @@ section.hero {
   font-size: 300;
   cursor: pointer;
   padding: 0 5rem;
+}
+.find-food-btn {
+    margin-left: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: #ec4899;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 0.875rem; /* Small text size */
+    width: 100%; /* Full width */
+    white-space: nowrap;
+    outline: none;
+    transition: background-color 0.2s ease;
 }
 
 /* Cities */
@@ -577,7 +565,10 @@ footer .branding {
 ==================  */
 
 @media screen and (min-width: 768px) {
- 
+  nav > .logo > svg {
+    display: inline;
+  }
+
   section.hero {
     padding: 0 2rem;
   }
@@ -685,6 +676,9 @@ footer .branding {
 }
 
 @media screen and (min-width: 960px) {
+  nav > .profile-icon-medium {
+    display: none;
+  }
 
   nav .login-btn {
     display: inline-flex;
@@ -769,26 +763,5 @@ footer .branding {
 @media screen and (min-width: 1440px) {
   .hero .bg-wrapper {
     max-height: 550px;
-  }
-}
-
-
-@media (min-width: 640px) {
-  .fp-header {
-      justify-content: space-between;
-      padding: 16px;
-  }
-
-  .fp-right-section {
-      justify-content: flex-end;
-  }
-
-  .fp-logo-text {
-      font-size: 24px;
-  }
-
-  .fp-login-btn, .fp-signup-btn {
-      padding: 8px 16px;
-      margin: 4px;
   }
 }
