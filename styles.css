@@ -17,6 +17,7 @@ body {
   max-width: 1300px;
   margin: 0 auto;
   position: relative;
+  z-index: 2;
 }
 
 
@@ -26,7 +27,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 8px;
-  background-color: white;
+  background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
@@ -103,8 +104,8 @@ section.hero {
 }
 
 .hero h3 {
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 1.9rem;
+  font-weight: 700;
   margin-top: 9rem;
   min-width: 220px;
   width: 70%;
@@ -113,11 +114,13 @@ section.hero {
 
 .hero .bg-wrapper {
   position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
   width: 33%;
   margin-left: 67%;
   background: url("assets/images/hero-bg-xl.webp");
   height: 100%;
-  z-index: -1;
   display: block;
   float: right;
   max-height: 335px;
@@ -125,23 +128,24 @@ section.hero {
 }
 
 .hero .actions {
-  margin-top: 4em;
-  border-radius: 15px;
+  margin-top: 2em;
+  border-radius: 16px;
 }
 
 .actions .input-container {
   position: relative;
 }
 
+
 .actions input {
   width: 100%;
-  padding: 1.5rem 1rem;
+  padding: 17px 1rem;
   border-radius: 10px;
   outline: none;
   border: 1px solid #dcdcdc;
   color: #333;
   font-size: 0.9rem;
-  box-shadow: 0 0.3rem 2rem rgb(0 0 0 /10%);
+ box-shadow: 0 .188rem 1.25rem rgba(0, 0, 0, .1);
 }
 
 .actions input::placeholder {
@@ -162,7 +166,7 @@ section.hero {
   width: 100%;
   color: white;
   border: none;
-  height: 64px;
+  height: 50px;
   border-radius: 8px;
   font-size: 0.9rem;
   font-size: 300;
@@ -192,7 +196,7 @@ section.hero {
 .partners .caption {
   padding: 0 2rem;
   font-size: 1.2rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 1.5rem;
 }
 
 .partners .background-image {
@@ -589,8 +593,8 @@ footer .branding {
     background: #fff;
     box-shadow: 0 0.3rem 2rem rgb(0 0 0 /10%);
     display: flex;
-    padding: 1rem;
-    max-width: 960px;
+    padding: 14px;
+    max-width: 850px;
   }
 
   .actions input {
@@ -600,7 +604,6 @@ footer .branding {
   .actions .input-container {
     width: 80%;
   }
-
   .actions button {
     margin: 0;
     width: 15%;
@@ -755,13 +758,14 @@ footer .branding {
   }
 
   .partners .backdrop-text {
-    font-size: 10rem;
+    font-size: 6rem;
     top: -130px;
     left: -40px;
   }
 
   .partners .caption {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
   }
 }
 
