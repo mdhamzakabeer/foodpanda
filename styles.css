@@ -251,29 +251,28 @@ section.hero {
 }
 
 .container .card {
-  height: 272px;
+  height: 275px;
   min-width: 230px;
-  max-width: 230px;
+  max-width: 280px;
   position: relative;
   overflow: hidden;
+  border-radius: 20px;
   cursor: pointer;
   margin-right: 1rem;
   margin-top: 1rem;
 }
 
-.arrow-box {
-  background: var(--primary-color);
-  padding: 1rem;
-  border-radius: 10px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  display: none;
-  align-items: center;
-}
-
-.container .card:hover .arrow-box {
-  display: flex;
+.buttonfoo {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
 }
 
 .container .card:hover::before {
@@ -304,7 +303,7 @@ section.hero {
   position: absolute;
   bottom: 10px;
   left: 30px;
-  color: #fff;
+  color: black;
   font-size: 1.5rem;
   font-weight: bold;
   z-index: 1;
