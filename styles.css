@@ -90,9 +90,15 @@ body {
   margin: 4px;
 }
 
-.fp-cart-icon {
-  color: #4b5563;
-  margin: 4px;
+.card-icon {
+  border: none;
+  background-color: #fff;
+  margin-top: 4px;
+}
+
+.card-icon:hover {
+  background-color: #f0efef;
+  border-radius: 20px;
 }
 
 /* Hero Section */
@@ -327,7 +333,7 @@ section.hero {
 }
 
 .app .container {
-  background: #e21b70;
+  background: #dc156e;
   min-height: 485px;
   z-index: -1;
 }
@@ -345,8 +351,10 @@ section.hero {
 .container .image-container {
   position: relative;
   max-width: 424px;
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
   min-height: 250px;
-  width: 100%;
   text-align: center;
 }
 
@@ -374,6 +382,7 @@ section.hero {
 .content-container .buttons-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .buttons-container .center-svg {
@@ -533,13 +542,18 @@ footer .branding {
   justify-content: center;
   margin-top: 0.5rem;
   line-height: 1.7rem;
+
 }
 
 .links a {
-  text-decoration: none;
-  font-weight: lighter;
-  font-size: 0.9rem;
-  color: rgb(137, 135, 135);
+  text-decoration: none; 
+  text-decoration: underline;  
+    text-underline-offset: 3px;  
+    text-decoration-thickness: 1px; 
+    text-decoration-color: black; 
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--colorInteractionSecondary);
 }
 
 .links a:hover {
@@ -547,8 +561,8 @@ footer .branding {
 }
 
 .first-col p {
-  color: rgb(137, 135, 135);
-  font-weight: lighter;
+  color: var(--colorInteractionSecondary);
+  font-weight: 400;
   font-size: 0.9rem;
 }
 
@@ -564,8 +578,12 @@ footer .branding {
 
 .countries a {
   text-decoration: none;
-  color: rgb(137, 135, 135);
-  font-weight: lighter;
+  text-decoration: underline;  
+  text-underline-offset: 3px;  
+  text-decoration-thickness: 1px; 
+  text-decoration-color: black;
+  color: var(--colorInteractionSecondary);
+  font-weight: 400;
 }
 
 .countries .vertical-divider {
@@ -674,7 +692,7 @@ footer .branding {
   }
 
   .image-container img {
-    min-width: 500px;
+    min-width: 400px;
   }
 
   .content-container .sub-heading {
@@ -714,7 +732,7 @@ footer .branding {
   }
 
   .image-container img {
-    min-width: 600px;
+    min-width: 550px;
   }
 
   .content-container .buttons-container {
