@@ -54,7 +54,8 @@ body {
   gap: 6px;
 }
 
-.fp-login-btn, .fp-signup-btn {
+.fp-login-btn,
+.fp-signup-btn {
   padding: 6px 12px;
   border-radius: 6px;
   border: 1px solid transparent;
@@ -151,7 +152,7 @@ section.hero {
   border: 1px solid #dcdcdc;
   color: #333;
   font-size: 0.9rem;
- box-shadow: 0 .188rem 1.25rem rgba(0, 0, 0, .1);
+  box-shadow: 0 .188rem 1.25rem rgba(0, 0, 0, .1);
 }
 
 .actions input::placeholder {
@@ -178,10 +179,12 @@ section.hero {
   font-size: 300;
   cursor: pointer;
 }
+
 .actions button:hover {
-  background-color: #a10e50; 
-  transform: scale(1.03); 
+  background-color: #a10e50;
+  transform: scale(1.03);
 }
+
 /* Partners Section */
 .partners {
   margin: 4rem 0;
@@ -351,9 +354,9 @@ section.hero {
 .container .image-container {
   position: relative;
   max-width: 424px;
-  width: 100%; 
-  height: auto; 
-  object-fit: cover; 
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   min-height: 250px;
   text-align: center;
 }
@@ -428,7 +431,7 @@ section.hero {
   line-height: 1.8rem;
 }
 
-.FAQ .text > a {
+.FAQ .text>a {
   text-decoration: none;
   color: var(--primary-color);
 }
@@ -439,13 +442,13 @@ section.hero {
   margin-top: 1.5rem;
 }
 
-.FAQ .list > li {
+.FAQ .list>li {
   width: 100%;
   font-weight: lighter;
   line-height: 1.8rem;
 }
 
-.FAQ li > span {
+.FAQ li>span {
   color: var(--primary-color);
 }
 
@@ -513,7 +516,7 @@ footer .branding {
   align-items: center;
 }
 
-.branding > svg {
+.branding>svg {
   width: 10rem;
 }
 
@@ -546,11 +549,11 @@ footer .branding {
 }
 
 .links a {
-  text-decoration: none; 
-  text-decoration: underline;  
-    text-underline-offset: 3px;  
-    text-decoration-thickness: 1px; 
-    text-decoration-color: black; 
+  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: black;
   font-weight: 400;
   font-size: 1.2rem;
   color: var(--colorInteractionSecondary);
@@ -578,9 +581,9 @@ footer .branding {
 
 .countries a {
   text-decoration: none;
-  text-decoration: underline;  
-  text-underline-offset: 3px;  
-  text-decoration-thickness: 1px; 
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
   text-decoration-color: black;
   color: var(--colorInteractionSecondary);
   font-weight: 400;
@@ -598,7 +601,7 @@ footer .branding {
 ==================  */
 
 @media screen and (min-width: 768px) {
- 
+
   section.hero {
     padding: 0 2rem;
   }
@@ -622,6 +625,7 @@ footer .branding {
   .actions .input-container {
     width: 80%;
   }
+
   .actions button {
     margin: 0;
     width: 15%;
@@ -796,20 +800,21 @@ footer .branding {
 
 @media (min-width: 640px) {
   .fp-header {
-      justify-content: space-between;
-      padding: 16px;
+    justify-content: space-between;
+    padding: 16px;
   }
 
   .fp-right-section {
-      justify-content: flex-end;
+    justify-content: flex-end;
   }
 
   .fp-logo-text {
-      font-size: 24px;
+    font-size: 24px;
   }
 
-  .fp-login-btn, .fp-signup-btn {
-      padding: 8px 16px;
-      margin: 4px;
+  .fp-login-btn,
+  .fp-signup-btn {
+    padding: 8px 16px;
+    margin: 4px;
   }
 }
